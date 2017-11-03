@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="marketing.css">
+    <script> src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Marketing Exercise</title>
+</head>
+
+<body>
+<div>
+<h1>Welcome to Airline Park. </h1>
+<h3>Check out prices for a great deal!!!</h3>
+<img src="../IMG/airplane.png" style="width:100%">
+<div class="bsurprise">
+    <button type="button">Click Surprise</button>    
+</div>
+<script>
+        $(document).ready(function(){
+        $("button").click(function(){
+            $("h1").text("Fifty Dollars!!");
+        });
+    }); 
+
+</script>
+</div>
+</body>
+</html>

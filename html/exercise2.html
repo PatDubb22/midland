@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/home2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+    var toy = 28.63;     // price
+    var taxes = 0.07;    // sales tax
+    var delivery = 3.50;  // delivery charge
+    var package = 5.00    // package charge
+     
+     toy = toy + delivery + package
+     toy = toy + (toy * taxes);
+     
+ </script>
+<script>
+    $(document).ready(function(){
+    $("button").on(click,function(){
+        $("#available").text("no availabilty");
+    });
+    }); 
+ </script>
+ <script>
+    $(document).ready(function(){
+    $("popUp").click(function(){
+        $("midland").text("destination", "example");
+        var midland = {
+          "Destination": "example",
+          "Time": "2 hours",
+          "Taxes": "10%",
+          }
+
+          setTimeout(function(){
+            alert(" Destination:" + midland.Destinatin +  Time: " + midland.Time " + midland.Taxes); }, 3000);
+          }
+        $('.notes').append(table);
+        alert("destination")
+        //$("class or id").switchClass("classname", "classname", time)
+       // $(button).remove();
+    });
+    }); 
+  </script>
+
+<title>jQuery exercises</title>
+</head>
+
+<body>
+
+<div class="header">
+    <h2>Flight by night</h2> 
+</div>
+
+
+<div class="row">
+<div class="col-3 col-m-3 menu">
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+  </ul>
+</div>
+       
+
+<div class="col-6 col-m-9">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Destination</th>
+            <th>Price</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Medellin</td>
+            <td>$50</td>
+            <td><button type="button" class="btn btn-primary">Check availabilty</button></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Rome</td>
+            <td>$50</td>
+            <td><button type="button" class="btn btn-primary1">Check availablity</button></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Toronto</td>
+            <td>$50</td>
+            <td><button type="button" class="btn btn-primary2">Check availability</button></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class="col-3 col-m-12">
+  <div class="aside">
+    <h2>Big Sale</h2>
+    <p>More information on discounted fares! Call 1-800-555-9999</p>
+    <h2>Where?</h2>
+    <p>Crete is a Greek island in the Mediterranean Sea.</p>
+    <td><button type="button" class="more">More Info</button></td>
+    <p>Discounts available until October 30, 2017</p>
+  </div>
+
+</div>
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>

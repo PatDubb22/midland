@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to wait 3 seconds, then alert "Hello".</p>
+<!-- syntax logic alert can work alone as javascript-->
+<button class="popUp">Try it</button>
+
+<script>
+$(document).ready(function(){
+ $(".popUp").click(function(){
+   setTimeout(function() { alert ("hello");}, 3000);
+       
+   });
+   });
+
+</script>
+
+</body>
+</html>

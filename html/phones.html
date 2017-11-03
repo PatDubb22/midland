@@ -1,0 +1,42 @@
+const TAX_RATE = 0.08;
+const PHONE_PRICE = 99.99;
+const ACCESSORY_PRICE = 9.99;
+const SPENDING_THRESHOLD = 200;
+
+var bank_balance = 500.91;
+var amount = 0;
+
+function calculateTax(amount){
+    return amount * TAX_RATE;
+}
+
+function formatAmount(amount){
+  return "$" + amount.toFixed( 2 );
+}
+
+// lets buy phones while we still have some bling bling,  this block of code define the result of our loop 
+while (amount < bank_balance){
+// pay your taxes!!!
+  amount = amount + calculateTax ( amount );
+  
+  console.log(
+    "Your purchase: " + formatAmount ( amount )
+    );
+    
+// Your purchase: $334.76
+
+  amount = amount + PHONE_PRICE;
+  
+  //If statement can we buy that really nice phone?
+  if (amount < SPENDING_THRESHOLD){
+      amount = amount + ACCESSORY_PRICE;
+  }
+}
+// hey dude!!! you have to pay bills, can you really pay 
+//for this?
+
+if ( amount > bank_balance ){
+  console.log(
+    "you cant buy this stuff bro! :( cry baby cry!  "
+    );
+}
